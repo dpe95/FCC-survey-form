@@ -1,5 +1,79 @@
 <!DOCTYPE html>
 <html>
   <head> </head>
-  <body></body>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This is a survey form</p>
+    <div id="form">
+      <form id="survey-form">
+        <div id="info-fields">
+          <label for="name" id="name-label">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+            required
+          />
+          <label for="email" id="email-label">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+          <label for="number" id="number-label">Phone Number</label>
+          <input
+            type="number"
+            min="1000000000"
+            max="9999999999"
+            name="number"
+            placeholder="Enter your #"
+            id="number"
+          />
+        </div>
+        <div id="dropdown">
+          <label for="colors">Choose your favorite color</label>
+          <select name="colors" id="colors">
+            <option value="N/A">N/A</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+          </select>
+        </div>
+        <div id="radio-buttons">
+          <label for="height">Select your height:</label>
+          <input type="radio" value="short" id="short" name="height" />
+          <label for="short">Short</label>
+          <input type="radio" value="average" id="average" name="height" />
+          <label for="average">Average</label>
+          <input type="radio" value="tall" id="tall" name="height" />
+          <label for="tall">Tall</label>
+        </div>
+        <div id="checkboxes">
+          <label for="activities">Select your favorite activities:</label>
+          <input
+            type="checkbox"
+            name="activity"
+            id="video-games"
+            value="video-games"
+          />
+          <label for="video-games">Playing video games</label>
+          <input type="checkbox" name="activity" id="hiking" value="hiking" />
+          <label for="hiking">Hiking</label>
+          <input
+            type="checkbox"
+            name="activity"
+            id="listening-to-music"
+            value="listening-to-music"
+          />
+          <label for="listening-to-music">Listening to music</label>
+          <input type="checkbox" name="activity" id="cooking" value="cooking" />
+          <label for="cooking">Cooking</label>
+        </div>
+        <div></div>
+      </form>
+    </div>
+  </body>
 </html>
